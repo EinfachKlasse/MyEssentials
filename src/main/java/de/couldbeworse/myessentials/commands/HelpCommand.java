@@ -22,11 +22,6 @@ public class HelpCommand implements CommandExecutor {
             return false;
         }
 
-//        if (args.length !=0) {
-//            player.sendMessage(USAGE + "/help myessentials");
-//            return true;
-//        }
-
         switch (args.length) {
             case (1) -> {
 
@@ -34,7 +29,7 @@ public class HelpCommand implements CommandExecutor {
                     case ("myessentials") -> {
 
                         player.sendMessage(PREFIX + "List of all commands:");
-                        player.sendMessage(PREFIX + "Help, ");
+                        player.sendMessage(PREFIX + "Help, Clearchat, Feed, Heal, Fly, Gamemode, God, Invsee, Ping, Playerinfo, Time, Weather");
 
                     }
                     default -> player.sendMessage(USAGE + "/help myessentials");

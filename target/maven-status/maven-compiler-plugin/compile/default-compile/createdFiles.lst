@@ -2,6 +2,7 @@ de\couldbeworse\myessentials\manager\registry\ListenerRegistry.class
 de\couldbeworse\myessentials\commands\HelpCommand.class
 de\couldbeworse\myessentials\MyEssentials.class
 de\couldbeworse\myessentials\commands\ClearChatCommand.class
+de\couldbeworse\myessentials\commands\FeedCommand.class
 de\couldbeworse\myessentials\commands\InvseeCommand.class
 de\couldbeworse\myessentials\commands\TimeCommand.class
 de\couldbeworse\myessentials\commands\PlayerInfoCommand.class
@@ -12,3 +13,4 @@ de\couldbeworse\myessentials\commands\HealCommand.class
 de\couldbeworse\myessentials\commands\WeatherCommand.class
 de\couldbeworse\myessentials\util\Strings.class
 de\couldbeworse\myessentials\commands\GamemodeCommand.class
+de\couldbeworse\myessentials\commands\GodCommand.class

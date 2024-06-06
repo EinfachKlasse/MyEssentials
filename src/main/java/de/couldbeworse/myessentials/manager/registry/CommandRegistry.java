@@ -18,6 +18,8 @@ public class CommandRegistry {
         register("weather" , new WeatherCommand());
         register("invsee" , new InvseeCommand());
         register("playerinfo" , new PlayerInfoCommand());
+        register("god" , new GodCommand());
+        register("feed" , new FeedCommand());
 
     }
 

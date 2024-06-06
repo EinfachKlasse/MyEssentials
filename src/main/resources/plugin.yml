@@ -41,6 +41,12 @@ commands:
   playerinfo:
     description: See other players important information's. - /playerinfo <player>
 
+  god:
+    description: Set yourself or a player inseverable. - /god <player>
+
+  feed:
+    description: Feed yourself or a player. - /feed <player>
+
 permissions:
 
   myessentials.command.help:
@@ -74,4 +80,10 @@ permissions:
     default: false
 
   myessentials.command.clearchat:
+    default: false
+
+  myessentials.command.god:
+    default: false
+
+  myessentials.command.feed:
     default: false
