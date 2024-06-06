@@ -1,6 +1,6 @@
 name: MyEssentials
 author: '@kilianevers'
-version: '${project.version}'
+version: '0.0.1-DEV'
 main: de.couldbeworse.myessentials.MyEssentials
 api-version: '1.20'
 

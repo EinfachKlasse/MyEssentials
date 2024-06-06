@@ -6,13 +6,13 @@
 
   <groupId>de.couldbeworse</groupId>
   <artifactId>MyEssentials</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.0.1-DEV</version>
   <packaging>jar</packaging>
 
   <name>MyEssentials</name>
 
   <properties>
-    <java.version>1.8</java.version>
+    <java.version>17</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -23,8 +23,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-          <source>${java.version}</source>
-          <target>${java.version}</target>
+          <source>16</source>
+          <target>16</target>
         </configuration>
       </plugin>
       <plugin>
