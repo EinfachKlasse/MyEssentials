@@ -1,0 +1,4 @@
+name: MyEssentials
+version: '${project.version}'
+main: de.couldbeworse.myessentials.MyEssentials
+api-version: '1.20'
