@@ -2,6 +2,7 @@ package de.couldbeworse.myessentials;
 
 import de.couldbeworse.myessentials.manager.registry.CommandRegistry;
 import de.couldbeworse.myessentials.manager.registry.ListenerRegistry;
+import de.couldbeworse.myessentials.util.Strings;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -9,6 +10,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+
+import static de.couldbeworse.myessentials.util.Strings.PREFIX;
 
 public final class MyEssentials extends JavaPlugin {
 
@@ -37,6 +40,7 @@ public final class MyEssentials extends JavaPlugin {
 
         commandRegistry.setup();
 
+        Bukkit.getConsoleSender().sendMessage(PREFIX + "MyEssentials is loaded.");
     }
 
     @Override

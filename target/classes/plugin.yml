@@ -47,6 +47,9 @@ commands:
   feed:
     description: Feed yourself or a player. - /feed <player>
 
+  lightning:
+    description: Summon a lightning bolt to your target player. - /lightning <player>
+
 permissions:
 
   myessentials.command.help:
@@ -86,4 +89,7 @@ permissions:
     default: false
 
   myessentials.command.feed:
+    default: false
+
+  myessentials.command.lightning:
     default: false

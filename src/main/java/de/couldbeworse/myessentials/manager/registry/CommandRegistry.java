@@ -20,6 +20,7 @@ public class CommandRegistry {
         register("playerinfo" , new PlayerInfoCommand());
         register("god" , new GodCommand());
         register("feed" , new FeedCommand());
+//        register("lightning" , new LightningCommand());
 
     }
 

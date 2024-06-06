@@ -1,6 +1,5 @@
 package de.couldbeworse.myessentials.commands;
 
-import de.couldbeworse.myessentials.util.Strings;
 import org.bukkit.*;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

@@ -1,5 +1,6 @@
 de\couldbeworse\myessentials\manager\registry\ListenerRegistry.class
 de\couldbeworse\myessentials\commands\HelpCommand.class
+de\couldbeworse\myessentials\commands\LightningCommand.class
 de\couldbeworse\myessentials\MyEssentials.class
 de\couldbeworse\myessentials\commands\ClearChatCommand.class
 de\couldbeworse\myessentials\commands\FeedCommand.class
