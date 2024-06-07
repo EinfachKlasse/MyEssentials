@@ -22,7 +22,7 @@ public class FlyCommand implements CommandExecutor {
             return true;
         }
 
-        if (!(player.hasPermission("teamcore.commands.fly"))) {
+        if (!(player.hasPermission("myessentials.command.fly"))) {
             player.sendMessage(NO_PERMISSION);
             return true;
         }
@@ -32,6 +32,7 @@ public class FlyCommand implements CommandExecutor {
             player.setAllowFlight(true);
             MyEssentials.getInstance().getPlayerFlyList().add(player.getUniqueId());
             player.sendMessage(PREFIX + "Fly enabled.");
+
         } else {
 
             player.setAllowFlight(false);

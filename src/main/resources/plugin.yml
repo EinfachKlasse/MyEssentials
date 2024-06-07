@@ -7,6 +7,41 @@ api-version: '1.20'
 
 commands:
 
+
+  #
+  #   Workshops
+  #
+
+  anvil:
+    description: Open a anvil from anywhere. - /anvil
+
+  enchantmenttable:
+    description: Open a enchantmenttable from anywhere. - /enchantmenttable
+
+  cartography:
+    description: Open a cartography from anywhere. - /cartography
+
+  loom:
+    description: Open a loom from anywhere. - /loom
+
+  stonecutter:
+    description: Open a stonecutter from anywhere. - /stonecutter
+
+  grindstone:
+    description: Open a grindstone from anywhere. - /grindstone
+
+  workbench:
+    description: Open a workbench from anywhere. - /workbench
+
+  smithingtable:
+    description: Open a smithingtable from anywhere. - /smithingtable
+
+
+  #
+  #  Player Commands
+  #
+
+
   help:
     description: See all commands registered. - /help
 
@@ -16,13 +51,17 @@ commands:
   fly:
     description: Set yourself into flight mode. - /fly
 
-  gm:
-    description: Change your gamemode. - /gm <0|1|2|3>
-    aliases:
-      - gamemode
-
   ping:
     description: See your own ping. - /ping
+
+  repair:
+    description: Repair the item in your hand. - /repair
+
+
+#
+#   Moderation's Commands
+#
+
 
   time:
     description: Change the time of the world. - /time <day|night>
@@ -41,16 +80,59 @@ commands:
   playerinfo:
     description: See other players important information's. - /playerinfo <player>
 
-  god:
-    description: Set yourself or a player inseverable. - /god <player>
+  gm:
+    description: Change your gamemode. - /gm <0|1|2|3>
+    aliases:
+      - gamemode
 
   vanish:
     description: Set yourself or another player into vanish. - /vanish <player>
 
-  repair:
-    description: Repair the item in your hand. - /repair
+  god:
+    description: Set yourself or a player inseverable. - /god <player>
+
+
+#
+# /////////////////////////////////////////////// PERMISSIONS //////////////////////////////////////////////////////////
+#
+
 
 permissions:
+
+
+#
+#   Workshop's Permission's
+#
+
+  myessentials.command.workshops.anvil:
+    default: false
+
+  myessentials.command.workshops.enchantmenttable:
+    default: false
+
+  myessentials.command.workshops.cartography:
+    default: false
+
+  myessentials.command.workshops.loom:
+    default: false
+
+  myessentials.command.workshops.stonecutter:
+    default: false
+
+  myessentials.command.workshops.grindstone:
+    default: false
+
+  myessentials.command.workshops.workbench:
+    default: false
+
+  myessentials.command.workshops.smithingtable:
+    default: false
+
+
+#
+#   Player Permission's
+#
+
 
   myessentials.command.help:
     default: true
@@ -60,6 +142,39 @@ permissions:
 
   myessentials.command.fly:
     default: false
+
+  myessentials.command.ping:
+    default: true
+
+  myessentials.command.repair:
+    default: false
+
+
+#
+#   Moderation's Permission's
+#
+
+
+  myessentials.command.time:
+    default: false
+
+  myessentials.command.weather:
+    default: false
+
+  myessentials.command.clearchat:
+    default: false
+
+  myessentials.command.invsee:
+    default: false
+
+  myessentials.command.playerinfo:
+    default: false
+
+
+#
+#   Gamemode Permission's
+#
+
 
   myessentials.command.gamemode.survival:
     default: false
@@ -73,23 +188,8 @@ permissions:
   myessentials.command.gamemode.spectator:
     default: false
 
-  myessentials.command.ping:
-    default: true
-
-  myessentials.command.time:
-    default: false
-
-  myessentials.command.weather:
-    default: false
-
-  myessentials.command.clearchat:
-    default: false
-
-  myessentials.command.god:
-    default: false
-
   myessentials.command.vanish:
     default: false
 
-  myessentials.command.repair:
+  myessentials.command.god:
     default: false

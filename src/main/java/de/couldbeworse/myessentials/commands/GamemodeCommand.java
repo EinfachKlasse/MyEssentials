@@ -29,8 +29,9 @@ public class GamemodeCommand implements CommandExecutor, TabCompleter {
                 switch (args[0]) {
                     case ("0"), ("survival") -> {
 
-                        if (player.hasPermission("myessentials.command.gamemode.survival")) {
+                        if (!(player.hasPermission("myessentials.command.gamemode.survival"))) {
                             player.sendMessage(NO_PERMISSION);
+                            return true;
                         }
 
                         player.setGameMode(GameMode.SURVIVAL);
@@ -39,8 +40,9 @@ public class GamemodeCommand implements CommandExecutor, TabCompleter {
 
                     case ("1"), ("creative") -> {
 
-                        if (player.hasPermission("myessentials.command.gamemode.creative")) {
-                         player.sendMessage(NO_PERMISSION);
+                        if (!(player.hasPermission("myessentials.command.gamemode.creative"))) {
+                            player.sendMessage(NO_PERMISSION);
+                            return true;
                         }
 
                         player.setGameMode(GameMode.CREATIVE);
@@ -49,8 +51,9 @@ public class GamemodeCommand implements CommandExecutor, TabCompleter {
 
                     case ("2"), ("adventure") -> {
 
-                        if (player.hasPermission("myessentials.command.gamemode.adventure")) {
+                        if (!(player.hasPermission("myessentials.command.gamemode.adventure"))) {
                             player.sendMessage(NO_PERMISSION);
+                            return true;
                         }
 
                         player.setGameMode(GameMode.ADVENTURE);
@@ -59,8 +62,9 @@ public class GamemodeCommand implements CommandExecutor, TabCompleter {
 
                     case ("3"), ("spectator") -> {
 
-                        if (player.hasPermission("myessentials.command.gamemode.spectator")) {
+                        if (!(player.hasPermission("myessentials.command.gamemode.spectator"))) {
                             player.sendMessage(NO_PERMISSION);
+                            return true;
                         }
 
                         player.setGameMode(GameMode.SPECTATOR);
