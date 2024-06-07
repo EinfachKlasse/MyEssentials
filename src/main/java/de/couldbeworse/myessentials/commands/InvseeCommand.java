@@ -31,7 +31,7 @@ public class InvseeCommand implements CommandExecutor {
                 Player targetPlayer = Bukkit.getPlayer(args[0]);
 
                 if (targetPlayer == null) {
-                    player.sendMessage(PREFIX + "Couldn't find a player named " + BLUE + targetPlayer.getName());
+                    player.sendMessage(PREFIX + "Couldn't find a player named " + BLUE + targetPlayer.getName() + GRAY + ".");
                     return true;
                 }
 

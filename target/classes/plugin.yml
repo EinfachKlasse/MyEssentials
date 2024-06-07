@@ -1,6 +1,6 @@
 name: MyEssentials
 author: '@kilianevers'
-version: '0.0.2-DEV'
+version: '0.0.2.1-DEV'
 main: de.couldbeworse.myessentials.MyEssentials
 api-version: '1.20'
 
@@ -44,11 +44,11 @@ commands:
   god:
     description: Set yourself or a player inseverable. - /god <player>
 
-  feed:
-    description: Feed yourself or a player. - /feed <player>
+  vanish:
+    description: Set yourself or another player into vanish. - /vanish <player>
 
-  lightning:
-    description: Summon a lightning bolt to your target player. - /lightning <player>
+  repair:
+    description: Repair the item in your hand. - /repair
 
 permissions:
 
@@ -88,8 +88,8 @@ permissions:
   myessentials.command.god:
     default: false
 
-  myessentials.command.feed:
+  myessentials.command.vanish:
     default: false
 
-  myessentials.command.lightning:
+  myessentials.command.repair:
     default: false

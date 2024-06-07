@@ -29,6 +29,11 @@ public class PlayerInfoCommand implements CommandExecutor {
 
                 Player target = Bukkit.getPlayer(args[0]);
 
+                if (target == null) {
+                    player.sendMessage(PREFIX + "Couldn't find a player named " + BLUE + target.getName() + GRAY + ".");
+                    return true;
+                }
+
                 player.sendMessage(" ");
                 player.sendMessage(PREFIX + BLUE + target.getName().toLowerCase() + WHITE + " Username");
                 player.sendMessage(PREFIX + BLUE + target.getAddress().toString().toLowerCase() + WHITE + " Address");

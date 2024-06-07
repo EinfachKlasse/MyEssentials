@@ -19,8 +19,8 @@ public class CommandRegistry {
         register("invsee" , new InvseeCommand());
         register("playerinfo" , new PlayerInfoCommand());
         register("god" , new GodCommand());
-        register("feed" , new FeedCommand());
-//        register("lightning" , new LightningCommand());
+        register("vanish" , new VanishCommand());
+        register("repair" , new RepairCommand());
 
     }
 

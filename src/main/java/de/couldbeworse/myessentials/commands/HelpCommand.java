@@ -29,7 +29,7 @@ public class HelpCommand implements CommandExecutor {
                     case ("myessentials") -> {
 
                         player.sendMessage(PREFIX + "List of all commands:");
-                        player.sendMessage(PREFIX + "Help, Clearchat, Feed, Heal, Fly, Gamemode, God, Invsee, Ping, Playerinfo, Time, Weather");
+                        player.sendMessage(PREFIX + "Help, Clearchat, Heal, Fly, Gamemode, God, Invsee, Ping, Playerinfo, Time, Weather, Vanish, Repair.");
 
                     }
                     default -> player.sendMessage(USAGE + "/help myessentials");

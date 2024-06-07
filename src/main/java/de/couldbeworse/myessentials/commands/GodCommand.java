@@ -8,6 +8,8 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 import static de.couldbeworse.myessentials.util.Strings.*;
+import static org.bukkit.ChatColor.BLUE;
+import static org.bukkit.ChatColor.GRAY;
 
 public class GodCommand implements CommandExecutor {
     @Override
@@ -29,11 +31,13 @@ public class GodCommand implements CommandExecutor {
                 if (player.isInvulnerable()) {
 
                     player.setInvulnerable(false);
+                    player.setGlowing(false);
                     player.sendMessage(PREFIX + "You're not longer invulnerable.");
 
                 } else {
 
                     player.setInvulnerable(true);
+                    player.setGlowing(true);
                     player.getMaxHealth();
                     player.setHealth(20);
                     player.sendMessage(PREFIX + "You're now invulnerable.");
@@ -44,7 +48,13 @@ public class GodCommand implements CommandExecutor {
 
                 Player target = Bukkit.getPlayer(args[0]);
 
+                if (target == null) {
+                    player.sendMessage(PREFIX + "Couldn't find a player named " + BLUE + target.getName() + GRAY + ".");
+                    return true;
+                }
+
                 if (target.isInvulnerable()) {
+                    target.setGlowing(false);
                     target.setInvulnerable(false);
                     target.sendMessage(PREFIX + "You're not longer invulnerable.");
 
@@ -57,6 +67,7 @@ public class GodCommand implements CommandExecutor {
                 } else {
 
                     target.setInvulnerable(true);
+                    target.setGlowing(true);
                     target.getMaxHealth();
                     target.setHealth(20);
                     target.sendMessage(PREFIX + "You're now invulnerable.");

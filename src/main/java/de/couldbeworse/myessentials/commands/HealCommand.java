@@ -62,7 +62,7 @@ public class HealCommand implements CommandExecutor {
                 }
 
                 if (playerToHeal == null) {
-                    player.sendMessage(PREFIX + "Couldn't find a player named " + BLUE + playerToHeal.getName() + WHITE + "!");
+                    player.sendMessage(PREFIX + "Couldn't find a player named " + BLUE + playerToHeal.getName() + GRAY + ".");
                     return true;
                 }
 

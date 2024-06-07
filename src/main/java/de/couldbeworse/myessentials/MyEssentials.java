@@ -2,7 +2,6 @@ package de.couldbeworse.myessentials;
 
 import de.couldbeworse.myessentials.manager.registry.CommandRegistry;
 import de.couldbeworse.myessentials.manager.registry.ListenerRegistry;
-import de.couldbeworse.myessentials.util.Strings;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
