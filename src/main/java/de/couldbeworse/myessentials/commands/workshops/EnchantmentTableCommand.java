@@ -25,17 +25,12 @@ public class EnchantmentTableCommand implements CommandExecutor {
             return true;
         }
 
-        if (args.length !=0) {
+        if (args.length != 0) {
             player.sendMessage(USAGE + "/enchantmenttable");
             return false;
         }
 
-        Inventory enchanting = player.getOpenInventory().getTopInventory();
-
-        if (enchanting.getType() != InventoryType.ENCHANTING) {
-            enchanting = Bukkit.createInventory(player , InventoryType.ENCHANTING);
-            player.openInventory(enchanting);
-        }
+        player.openEnchanting(null, true);
 
 
         return true;

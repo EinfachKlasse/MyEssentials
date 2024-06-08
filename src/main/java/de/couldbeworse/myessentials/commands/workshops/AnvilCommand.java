@@ -24,17 +24,12 @@ public class AnvilCommand implements CommandExecutor {
             return true;
         }
 
-        if (args.length !=0) {
+        if (args.length != 0) {
             player.sendMessage(USAGE + "/anvil");
             return false;
         }
 
-        Inventory cartography = player.getOpenInventory().getTopInventory();
-
-        if (cartography.getType() != InventoryType.ANVIL) {
-            cartography = Bukkit.createInventory(player , InventoryType.ANVIL);
-            player.openInventory(cartography);
-        }
+        player.openAnvil(null, true);
 
 
         return true;

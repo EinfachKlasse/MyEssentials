@@ -21,7 +21,7 @@ public class ClearChatCommand implements CommandExecutor {
             return true;
         }
 
-        if (args.length !=0) {
+        if (args.length != 0) {
             player.sendMessage(USAGE + "/clearchat");
             return true;
         }

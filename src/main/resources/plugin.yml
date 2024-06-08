@@ -91,6 +91,9 @@ commands:
   god:
     description: Set yourself or a player inseverable. - /god <player>
 
+  setlevel:
+    description: Set your own or another players exp level. - /setlevel <level> <player>
+
 
 #
 # /////////////////////////////////////////////// PERMISSIONS //////////////////////////////////////////////////////////
@@ -192,4 +195,7 @@ permissions:
     default: false
 
   myessentials.command.god:
+    default: false
+
+  myessentials.command.setlevel:
     default: false

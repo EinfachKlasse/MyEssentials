@@ -25,17 +25,12 @@ public class CartographyCommand implements CommandExecutor {
             return true;
         }
 
-        if (args.length !=0) {
+        if (args.length != 0) {
             player.sendMessage(USAGE + "/cartography");
             return false;
         }
 
-        Inventory cartography = player.getOpenInventory().getTopInventory();
-
-        if (cartography.getType() != InventoryType.CARTOGRAPHY) {
-            cartography = Bukkit.createInventory(player , InventoryType.CARTOGRAPHY);
-            player.openInventory(cartography);
-        }
+        player.openCartographyTable(null, true);
 
 
         return true;

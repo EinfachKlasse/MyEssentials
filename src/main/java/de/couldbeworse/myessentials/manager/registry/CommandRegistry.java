@@ -38,6 +38,7 @@ public class CommandRegistry {
         register("playerinfo" , new PlayerInfoCommand());
         register("god" , new GodCommand());
         register("vanish" , new VanishCommand());
+        register("setlevel" , new SetLevelCommand());
 
     }
 

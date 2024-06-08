@@ -49,7 +49,7 @@ public class GodCommand implements CommandExecutor {
                 Player target = Bukkit.getPlayer(args[0]);
 
                 if (target == null) {
-                    player.sendMessage(PREFIX + "Couldn't find a player named " + BLUE + target.getName() + GRAY + ".");
+                    player.sendMessage(PREFIX + "Couldn't find a player named " + BLUE + args[0] + GRAY + ".");
                     return true;
                 }
 

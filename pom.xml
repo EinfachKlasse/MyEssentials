@@ -6,7 +6,7 @@
 
   <groupId>de.couldbeworse</groupId>
   <artifactId>MyEssentials</artifactId>
-  <version>0.0.3.1-DEV</version>
+  <version>0.0.3.2-DEV</version>
   <packaging>jar</packaging>
 
   <name>MyEssentials</name>

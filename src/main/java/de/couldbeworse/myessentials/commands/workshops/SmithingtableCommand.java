@@ -25,17 +25,12 @@ public class SmithingtableCommand implements CommandExecutor {
             return true;
         }
 
-        if (args.length !=0) {
+        if (args.length != 0) {
             player.sendMessage(USAGE + "/smithingtable");
             return false;
         }
 
-        Inventory smithingtable = player.getOpenInventory().getTopInventory();
-
-        if (smithingtable.getType() != InventoryType.SMITHING) {
-            smithingtable = Bukkit.createInventory(player , InventoryType.SMITHING);
-            player.openInventory(smithingtable);
-        }
+        player.openSmithingTable(null, true);
 
 
         return true;

@@ -56,13 +56,13 @@ public class HealCommand implements CommandExecutor {
 
                 Player playerToHeal = Bukkit.getPlayer(args[0]);
 
-                if (playerToHeal.getGameMode().equals(GameMode.CREATIVE)) {
-                    player.sendMessage(PREFIX + "Player is in creative!");
+                if (playerToHeal == null) {
+                    player.sendMessage(PREFIX + "Couldn't find a player named " + BLUE + args[0] + GRAY + ".");
                     return true;
                 }
 
-                if (playerToHeal == null) {
-                    player.sendMessage(PREFIX + "Couldn't find a player named " + BLUE + playerToHeal.getName() + GRAY + ".");
+                if (playerToHeal.getGameMode().equals(GameMode.CREATIVE)) {
+                    player.sendMessage(PREFIX + "Player is in creative!");
                     return true;
                 }
 
@@ -76,20 +76,19 @@ public class HealCommand implements CommandExecutor {
 
                 playerToHeal.setMaxHealth(playerToHeal.getMaxHealth());
                 playerToHeal.setHealth(20);
-                playerToHeal.setSaturation(20);
 
                 playerToHeal.getWorld().spawnParticle(Particle.TOTEM, player.getLocation(), 50);
 
                 playerToHeal.playSound(playerToHeal.getLocation() , Sound.ENTITY_PLAYER_LEVELUP, 0.2F,1);
 
                 if (playerToHeal == player) {
-                    player.sendMessage(PREFIX + GRAY + "You've been" + GREEN + BOLD + " Healed" + GRAY + ".");
+                    player.sendMessage(PREFIX + GRAY + "You've been" + BLUE + " healed" + GRAY + ".");
                     return true;
                 }
 
-                player.sendMessage(PREFIX + GRAY + "You've " + BLUE + BOLD + "healed " + GRAY  + "the player " + AQUA + BOLD + playerToHeal.getName() + GRAY + ".");
+                player.sendMessage(PREFIX + GRAY + "You've " + BLUE + "healed " + GRAY  + "the player " + BLUE + playerToHeal.getName() + GRAY + ".");
 
-                playerToHeal.sendMessage(PREFIX + GRAY + "You've been " + BLUE + BOLD + "healed " + GRAY + "by " + AQUA + BOLD + player.getName() + GRAY  + ".");
+                playerToHeal.sendMessage(PREFIX + GRAY + "You've been " + BLUE + "healed " + GRAY + "by " + BLUE + player.getName() + GRAY  + ".");
             }
             default -> player.sendMessage(USAGE + "/heal <player>");
         }

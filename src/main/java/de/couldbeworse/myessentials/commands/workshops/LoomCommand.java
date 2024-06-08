@@ -25,18 +25,12 @@ public class LoomCommand implements CommandExecutor {
             return true;
         }
 
-        if (args.length !=0) {
+        if (args.length != 0) {
             player.sendMessage(USAGE + "/loom");
             return false;
         }
 
-        Inventory loom = player.getOpenInventory().getTopInventory();
-
-        if (loom.getType() != InventoryType.LOOM) {
-            loom = Bukkit.createInventory(player , InventoryType.LOOM);
-            player.openInventory(loom);
-        }
-
+        player.openLoom(null, true);
 
         return true;
     }

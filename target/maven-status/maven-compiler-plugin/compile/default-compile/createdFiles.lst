@@ -1,4 +1,5 @@
 de\couldbeworse\myessentials\commands\HelpCommand.class
+de\couldbeworse\myessentials\commands\SetLevelCommand.class
 de\couldbeworse\myessentials\MyEssentials.class
 de\couldbeworse\myessentials\commands\ClearChatCommand.class
 de\couldbeworse\myessentials\commands\workshops\AnvilCommand.class
@@ -16,6 +17,7 @@ de\couldbeworse\myessentials\util\Strings.class
 de\couldbeworse\myessentials\manager\registry\ListenerRegistry.class
 de\couldbeworse\myessentials\commands\workshops\LoomCommand.class
 de\couldbeworse\myessentials\commands\TimeCommand.class
+de\couldbeworse\myessentials\util\IntegerUtils.class
 de\couldbeworse\myessentials\commands\PlayerInfoCommand.class
 de\couldbeworse\myessentials\commands\FlyCommand.class
 de\couldbeworse\myessentials\commands\HealCommand.class

@@ -26,17 +26,12 @@ public class WorkbenchCommand implements CommandExecutor {
             return true;
         }
 
-        if (args.length !=0) {
+        if (args.length != 0) {
             player.sendMessage(USAGE + "/workbench");
             return false;
         }
 
-        Inventory workbench = player.getOpenInventory().getTopInventory();
-
-        if (workbench.getType() != InventoryType.WORKBENCH) {
-            workbench = Bukkit.createInventory(player , InventoryType.WORKBENCH);
-            player.openInventory(workbench);
-        }
+        player.openWorkbench(null, true);
 
 
         return true;

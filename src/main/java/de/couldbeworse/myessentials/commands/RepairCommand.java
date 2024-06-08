@@ -25,7 +25,7 @@ public class RepairCommand implements CommandExecutor {
             return true;
         }
 
-        if (args.length !=0) {
+        if (args.length != 0) {
             player.sendMessage(USAGE + "/repair");
             return true;
         }

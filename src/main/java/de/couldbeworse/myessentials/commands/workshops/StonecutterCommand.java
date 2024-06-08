@@ -25,17 +25,12 @@ public class StonecutterCommand implements CommandExecutor {
             return true;
         }
 
-        if (args.length !=0) {
+        if (args.length != 0) {
             player.sendMessage(USAGE + "/stonecutter");
             return false;
         }
 
-        Inventory stonecutter = player.getOpenInventory().getTopInventory();
-
-        if (stonecutter.getType() != InventoryType.STONECUTTER) {
-            stonecutter = Bukkit.createInventory(player , InventoryType.STONECUTTER);
-            player.openInventory(stonecutter);
-        }
+        player.openStonecutter(null, true);
 
 
         return true;

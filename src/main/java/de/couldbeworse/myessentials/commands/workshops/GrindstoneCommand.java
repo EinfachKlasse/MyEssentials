@@ -25,17 +25,12 @@ public class GrindstoneCommand implements CommandExecutor {
             return true;
         }
 
-        if (args.length !=0) {
+        if (args.length != 0) {
             player.sendMessage(USAGE + "/grindstone");
             return false;
         }
 
-        Inventory grindstone = player.getOpenInventory().getTopInventory();
-
-        if (grindstone.getType() != InventoryType.GRINDSTONE) {
-            grindstone = Bukkit.createInventory(player , InventoryType.GRINDSTONE);
-            player.openInventory(grindstone);
-        }
+        player.openGrindstone(null, true);
 
 
         return true;

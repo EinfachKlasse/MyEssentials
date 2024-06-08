@@ -18,7 +18,7 @@ public class PingCommand implements CommandExecutor {
             return true;
         }
 
-        if (args.length !=0) {
+        if (args.length != 0) {
             player.sendMessage(USAGE + "/ping");
             return true;
         }

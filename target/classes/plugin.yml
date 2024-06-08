@@ -1,6 +1,6 @@
 name: MyEssentials
 author: '@kilianevers'
-version: '0.0.3-DEV'
+version: '0.0.3.1-DEV'
 main: de.couldbeworse.myessentials.MyEssentials
 api-version: '1.20'
 
@@ -90,6 +90,9 @@ commands:
 
   god:
     description: Set yourself or a player inseverable. - /god <player>
+
+  setlevel:
+    description: Set your own or another players exp level. - /setlevel <level> <player>
 
 
 #
@@ -192,4 +195,7 @@ permissions:
     default: false
 
   myessentials.command.god:
+    default: false
+
+  myessentials.command.setlevel:
     default: false
